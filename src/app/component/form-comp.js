@@ -25,7 +25,7 @@ export default function ContactForm() {
 
     // Email.js configuration
     const serviceID = "service_alfs33s"; 
-    const templateID = "your_template_id"; 
+    const templateID = "template_jt3tdve"; 
     const userID = "your_user_id"; 
 
     // Send email using Email.js
