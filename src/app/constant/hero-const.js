@@ -8,8 +8,8 @@ export const navLinks = [
 // Hero Section 
 export const heroContent = {
   name : "Contacts",
-  title: "Hello, my name is Zayyan Mustafa",
-  subtitle: "Front-end web designer",
+  title: "Hey, my name is Zayyan Mustafa",
+  subtitle: "Front-End Developer",
   description:
  "I'm Zayyan Mustafa, a passionate Front-End Developer skilled in React, Next.js, Firebase, and Material UI. With Google certifications, I build modern, high-performance web applications. I’ve worked on projects like a Summit View School website and an LMS system with role-based dashboards. Beyond coding, I contribute to Islamic and educational initiatives, merging technology with purpose.",
   buttons: [

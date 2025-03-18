@@ -1,7 +1,8 @@
-"use client"; 
-
+"use client";
 import { useState } from "react";
 import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { contactData } from "../constant/constant";
 import Footer from "./footer-comp.js";
 
@@ -12,6 +13,7 @@ export default function ContactForm() {
     message: "",
   });
 
+  // Handle form input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -20,24 +22,26 @@ export default function ContactForm() {
     }));
   };
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Email.js configuration
-    const serviceID = "service_alfs33s"; 
-    const templateID = "template_jt3tdve"; 
-    const userID = "your_user_id"; 
+    // EmailJS configuration
+    const serviceID = "service_5pct7hd"; 
+    const templateID = "template_8p2z9v8";
+    const publicKey = "WA5_YIDtuqRZmcLwH";
 
-    // Send email using Email.js
-    emailjs.send(serviceID, templateID, formData, userID)
+    // Send email using EmailJS
+    emailjs
+      .send(serviceID, templateID, formData, publicKey)
       .then((response) => {
-        console.log("Email sent successfully!", response.status, response.text);
-        alert("Form submitted successfully!");
-        setFormData({ name: "", email: "", message: "" }); 
+
+        toast.success("Email sent successfully!"); 
+        setFormData({ name: "", email: "", message: "" }); // Clear the form
       })
       .catch((error) => {
-        console.error("Failed to send email:", error);
-        alert("Failed to submit form. Please try again.");
+
+        toast.error("Failed to submit form. Please try again."); // Show error toast
       });
   };
 
@@ -53,6 +57,7 @@ export default function ContactForm() {
         </h1>
 
         <form onSubmit={handleSubmit} className="space-y-6">
+          {/* Name Field */}
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700">
               {contactData.formLabels.name}
@@ -68,6 +73,7 @@ export default function ContactForm() {
             />
           </div>
 
+          {/* Email Field */}
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700">
               {contactData.formLabels.email}
@@ -83,6 +89,7 @@ export default function ContactForm() {
             />
           </div>
 
+          {/* Message Field */}
           <div>
             <label htmlFor="message" className="block text-sm font-medium text-gray-700">
               {contactData.formLabels.message}
@@ -98,6 +105,7 @@ export default function ContactForm() {
             />
           </div>
 
+          {/* Submit Button */}
           <div className="flex justify-end">
             <button
               type="submit"
@@ -107,10 +115,13 @@ export default function ContactForm() {
             </button>
           </div>
         </form>
+
+        {/* Toast Container */}
+        <ToastContainer />
       </main>
 
-    <Footer/>
+      {/* Footer */}
+      <Footer />
     </div>
-    
   );
 }

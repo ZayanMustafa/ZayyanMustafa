@@ -16,9 +16,10 @@ export default function ProjectsPage() {
       <div className="space-y-8">
         {projects.map((project, index) => (
           <div key={project.id} className="bg-white rounded-lg shadow-sm overflow-hidden">
-            <div className={`flex flex-col md:flex-row${index % 2 === 0 ? "" : "-reverse"}`}>
+            {/* Flex container for image and text */}
+            <div className={`flex flex-col md:flex-row ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
               {/* Project Details */}
-              <div className="flex-1 p-8 flex flex-col justify-center">
+              <div className="flex-1 p-8 flex flex-col justify-center md:w-2/3">
                 <h2 className="text-2xl font-bold mb-3">{project.name}</h2>
                 <p className="text-gray-600 mb-6">{project.description}</p>
                 <div>
@@ -33,11 +34,11 @@ export default function ProjectsPage() {
               </div>
 
               {/* Project Image */}
-              <div className="flex-1">
+              <div className="flex-1 md:w-1/3">
                 <img
                   src={project.image || "/placeholder.svg"}
                   alt={project.imageAlt}
-                  className="w-full h-full object-cover"
+                  className="w-full h-64 md:h-auto object-cover"
                 />
               </div>
             </div>

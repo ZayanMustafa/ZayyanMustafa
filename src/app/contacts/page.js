@@ -4,9 +4,16 @@
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"; // React Icons
 import ContactForm from "../component/form-comp";
 import NavBar from "../component/nav-comp";
+import Head from "next/head";
 
 export default function ContactPage() {
   return (
+    <>
+     <Head>
+      <title>Contact Me</title>
+      <meta name="description" content="Contact me page" />
+     </Head>
+     
     <div className="min-h-screen flex flex-col bg-gray-50">
       {/* Hero Section */}
       <NavBar/>
@@ -53,5 +60,6 @@ export default function ContactPage() {
         </div>
       </div> */}
     </div>
+    </>
   );
 }

@@ -1,6 +1,6 @@
+// about/page.js
 'use client';
 import Image from "next/image";
-import Link from "next/link";
 import { saveAs } from "file-saver";
 import { portfolioData } from "../constant/about-const";
 import Footer from "../component/footer-comp.js";
@@ -68,7 +68,6 @@ export default function PortfolioPage() {
         </div>
       </main>
 
-      {/* Footer */}
       <Footer />
     </div>
   );
