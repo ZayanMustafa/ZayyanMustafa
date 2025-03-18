@@ -8,7 +8,7 @@ export const projects = [
       githubLink: "https://github.com/ZayanMustafa/ZayChat",
       deployLink: "https://zaychat.vercel.app/",
       youtubeLink: "https://youtu.be/UKUWGNomdOA",
-      image: "/project1.png",
+      image: "/Chat.jpeg",
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ export const projects = [
       githubLink: "https://github.com/ZayanMustafa/QuipQuake-Generator",
       deployLink: "https://zayanmustafa.github.io/QuipQuake-Generator/",
       youtubeLink: "https://youtu.be/lXuQTzXY2jg?si=MUBheWiF0LFjvXv2",
-      image: "/project2.png",
+      image: "/Quote.jpeg",
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ export const projects = [
       githubLink: "https://github.com/ZayanMustafa/TaskTracker",
       deployLink: "https://zayanmustafa.github.io/TaskTracker/",
       youtubeLink: "https://youtu.be/hRBmr_Xv-PY?si=HZRMqZ8BoFkxyuYw",
-      image: "/project3.png",
+      image: "/Task.jpeg",
     },
     {
       id: 4,
@@ -38,7 +38,7 @@ export const projects = [
       githubLink: "https://github.com/ZayanMustafa/ClimateTracker",
       deployLink: "https://zayanmustafa.github.io/ClimateTracker/",   
       youtubeLink: "https://youtu.be/w048696K_9A", // Need to Update
-      image: "/project4.png",
+      image: "/Weather.jpeg",
     },
     {
       id: 5,
@@ -48,7 +48,7 @@ export const projects = [
       githubLink: "https://github.com/ZayanMustafa/DigitalClock",
       deployLink: "https://zayanmustafa.github.io/DigitalClock/",
       youtubeLink: "https://youtu.be/9-X49z-a38U", // Need to Update
-      image: "/project5.png",
+      image: "/Clock.jpeg",
     },
     {
       id: 6,
@@ -58,6 +58,7 @@ export const projects = [
       githubLink: "https://github.com/ZayanMustafa/LockBuilder",
       deployLink: "https://zayanmustafa.github.io/LockBuilder/",
       youtubeLink: "https://youtu.be/9-X49z-a38U", // Need to Update
+      image: "/Lock.jpeg",
     }
       // Add more projects as needed
   ];
