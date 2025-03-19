@@ -37,7 +37,7 @@ export const projects = [
       techStack: ["JavaScript", "Bootstrap" , "API Integration" ],
       githubLink: "https://github.com/ZayanMustafa/ClimateTracker",
       deployLink: "https://zayanmustafa.github.io/ClimateTracker/",   
-      youtubeLink: "https://youtu.be/w048696K_9A", // Need to Update
+      youtubeLink: "https://youtu.be/YJO50c0ETLU", 
       image: "/Weather.jpeg",
     },
     {
@@ -47,7 +47,7 @@ export const projects = [
       techStack: ["JavaScript", "Bootstrap", "Responsive Design"],
       githubLink: "https://github.com/ZayanMustafa/DigitalClock",
       deployLink: "https://zayanmustafa.github.io/DigitalClock/",
-      youtubeLink: "https://youtu.be/9-X49z-a38U", // Need to Update
+      youtubeLink: "https://youtu.be/OtVkg36VmDE", 
       image: "/Clock.jpeg",
     },
     {
@@ -57,7 +57,7 @@ export const projects = [
       techStack: ["JavaScript", "Bootstrap", "Responsive Design"],
       githubLink: "https://github.com/ZayanMustafa/LockBuilder",
       deployLink: "https://zayanmustafa.github.io/LockBuilder/",
-      youtubeLink: "https://youtu.be/9-X49z-a38U", // Need to Update
+      youtubeLink: "https://youtu.be/sWbjCa5PWms", 
       image: "/Lock.jpeg",
     }
       // Add more projects as needed
